@@ -26,7 +26,7 @@ class MovieAsyncTask extends AsyncTask<String, Integer, String>{
     }
 
     protected void onPreExecute() {
-        Toast.makeText(context, R.string.pre_exec_toast, Toast.LENGTH_LONG);
+        Toast.makeText(context, R.string.pre_exec_toast, Toast.LENGTH_LONG).show();
     }
 
     // doInBackGround()
@@ -39,28 +39,22 @@ class MovieAsyncTask extends AsyncTask<String, Integer, String>{
         super.onPostExecute(result);
 
         if (result.length() == 0) {
-            Toast.makeText(context, "No data was found", Toast.LENGTH_LONG);
+            Toast.makeText(context, "No data was found", Toast.LENGTH_LONG).show();
         }
         else {
-            ArrayList<TrackData> trackData = new ArrayList<>();
             try {
                 JSONObject respObj = new JSONObject(result);
-                JSONObject topTracksObj = respObj.getJSONObj("tracks");
-                JSONArray tracks = topTracksObj.getJSONObj("track");
+                String title = respObj.getString("Title");
+                String genres = respObj.getString("Genres");
+                String synopsis = respObj.getString("Plot");
+                MovieData movie = new MovieData(title, genres, synopsis);
+                this.activity.setData(movie);
 
-                for (int i = 0; i < tracks.length(); i++) {
-                    JSONObject track = tracks.getJSONObject(i);
-                    String trackName = track.getString("name");
-                    JSONObject artistObj = track.getJSONObject("artist");
-                    String artistName = artistObj.getString("artist");
-                    trackData.add(new TrackData(trackName, artistName));
-                }
             }
             catch (JSONException e) {
-
+                e.printStackTrace();
             }
-            this.activity.setData(trackData);
         }
     }
 }
-}
+
