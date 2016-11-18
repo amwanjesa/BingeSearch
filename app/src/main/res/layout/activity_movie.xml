@@ -30,5 +30,13 @@
         android:layout_below="@+id/movie_synopsis"
         android:id="@+id/movie_poster"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_to_wachtlist"
+        android:onClick="addToWatchlist"
+        android:text="Add to watchlist"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

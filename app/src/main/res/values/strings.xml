@@ -5,4 +5,5 @@
     <string name="pre_exec_toast">Getting those sick flix!</string>
     <string name="movieAPI_1">http://www.omdbapi.com/?t=</string>
     <string name="movieAPI_2"><![CDATA[&y=&plot=short&r=json]]></string>
+    <string name="watchlist_btn_text">View WatchList</string>
 </resources>

@@ -21,6 +21,6 @@ public class Film implements Serializable{
     }
 
     public String toString(){
-        return movieTitle + genre + synopsis + posterURL;
+        return movieTitle + " " + genre + " " + synopsis + " " + posterURL;
     }
 }
