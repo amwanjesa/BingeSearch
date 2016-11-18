@@ -1,15 +1,11 @@
 package com.example.albert.bingesearch;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 /**
  * Created by albert on 15/11/2016.
@@ -39,15 +35,17 @@ class MovieAsyncTask extends AsyncTask<String, Integer, String>{
         super.onPostExecute(result);
 
         if (result.length() == 0) {
-            Toast.makeText(context, "No data was found", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "No data was found", Toast.LENGTH_SHORT).show();
         }
         else {
             try {
                 JSONObject respObj = new JSONObject(result);
                 String title = respObj.getString("Title");
-                String genres = respObj.getString("Genres");
+                String genres = respObj.getString("Genre");
                 String synopsis = respObj.getString("Plot");
-                MovieData movie = new MovieData(title, genres, synopsis);
+                String posterURL = respObj.getString("Poster");
+                Film movie = new Film(title, genres, synopsis, posterURL);
+
                 this.activity.setData(movie);
 
             }

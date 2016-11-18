@@ -10,19 +10,12 @@ import java.net.URL;
  */
 public class HttpRequestHelper {
 
-    private static final String url1 = " laalla";
-    private static final String url2 = " blabldsjgba";
-
     protected static synchronized String downloadFromServer(String... params) {
 
         // declare return string result
         String result = "";
 
-        // get chosen tag from argument
-        String chosenTag = params[0];
-
-        // complete string for URL
-        String completeURL = url1 + chosenTag + url2;
+        String completeURL = params[0];
 
         // turn string into url
         URL url;

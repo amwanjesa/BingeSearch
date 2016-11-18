@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_792809ff43811e1607f1eb101287ba6cabaf4d75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_5e08f5bfc9dffe350e48b202b51f1e576408dcfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_895fbbce0b7f618f74a8eedfcccfcda767b20942.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_978f577ec6ea1a7bb42225dc2cc30b30656d9acd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_508e8643633c1244e6b72e69e87e5e0ad33c0d4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_55649d4374a18670ce4e151a48b19f1337e514c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_15c31b36508c2517b0754a1c63b8c05023fd9399.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_247098b9954f58d4ec68a9e07eb7042e8b35586d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_5aa2e3480fdf8cf8b491dc6bdb9378f2ed8cf0e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_ed6a92dcb97055235e8a367b11a8666c649c1421.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_52f47dec1cdd88efa0c229e7e7c813a00e33d0f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_ccef352192ea8d7e959cc052779c4730aac609c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_3307bec0b4f1c5c740fe8affc255a24cfc0b2ce4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_bd7e5d3cf8512e2b923cf6c538f86276206fff1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\albert\AndroidStudioProjects\BingeSearch\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_4bfc28a7fba45341776fdd72b9c44f34007981e0.jar" />
+    </item>
+
+</items>
