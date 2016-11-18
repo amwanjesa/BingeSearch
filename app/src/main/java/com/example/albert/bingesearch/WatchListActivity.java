@@ -51,7 +51,6 @@ public class WatchListActivity extends ListActivity {
                 movieIntent.putExtra("theMovie", moviesInList.get(position));
                 movieIntent.putExtra("added", true);
                 startActivity(movieIntent);
-                finish();
             }
         });
 
