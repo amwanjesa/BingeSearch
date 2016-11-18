@@ -31,5 +31,6 @@
         android:layout_alignParentBottom="true"
         android:visibility="invisible"
         android:id="@+id/watchlist_btn"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:onClick="checkWatchList"/>
 </RelativeLayout>

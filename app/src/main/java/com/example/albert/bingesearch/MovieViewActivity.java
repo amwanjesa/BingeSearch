@@ -4,7 +4,9 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,6 +26,13 @@ public class MovieViewActivity extends AppCompatActivity{
         Bundle extras = getIntent().getExtras();
 
         theMovie = (Film) extras.getSerializable("theMovie");
+        boolean added = extras.getBoolean("added");
+
+        if(added){
+            Button addButton = (Button) findViewById(R.id.add_to_wachtlist);
+            addButton.setEnabled(false);
+            addButton.setVisibility(View.INVISIBLE);
+        }
         TextView title = (TextView) findViewById(R.id.movie_title);
         TextView genre = (TextView) findViewById(R.id.movie_genre);
         TextView synopsis = (TextView) findViewById(R.id.movie_synopsis);
@@ -45,8 +54,16 @@ public class MovieViewActivity extends AppCompatActivity{
     }
 
     public void addToWatchlist(View view){
-        SharedPreferences moviePrefs = this.getSharedPreferences("settings", this.MODE_PRIVATE);
+        SharedPreferences moviePrefs = getSharedPreferences("settings", getApplicationContext().MODE_PRIVATE);
         SharedPreferences.Editor editor = moviePrefs.edit();
+        String movie = theMovie.toString();
+        Log.d("added_Movie", movie);
+        String[] splitted = movie.split(getString(R.string.split_char));
+        editor.putString(splitted[0], movie);
+        editor.commit();
+
+        finish();
+
 
     }
 }

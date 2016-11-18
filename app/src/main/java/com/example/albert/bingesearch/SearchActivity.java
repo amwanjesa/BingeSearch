@@ -7,52 +7,82 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class SearchActivity extends AppCompatActivity {
 
     Film foundMovie;
-    ArrayList<String> watchList = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        displayListButton();
+    }
 
-        if(watchList.size() > 0){
+    private void displayListButton(){
+        SharedPreferences moviePrefs = getSharedPreferences("settings", getApplicationContext().MODE_PRIVATE);
+        Map<String, ?> allEntries = moviePrefs.getAll();
+        if(!allEntries.isEmpty()){
             Button watchListBtn = (Button) findViewById(R.id.watchlist_btn);
             watchListBtn.setEnabled(true);
             watchListBtn.setVisibility(View.VISIBLE);
         }
+    }
 
-        SharedPreferences moviePrefs = this.getPreferences(this.MODE_PRIVATE);
-        SharedPreferences.Editor editor = moviePrefs.edit();
-        JSONArray movieList = new JSONArray(watchList);
-        movieList.toString()
-        editor.putString("movieList", movieList.toString());
-        editor.commit();
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        setContentView(R.layout.activity_search);
+        displayListButton();
     }
 
     public void searchMovieData(View view){
         EditText movieTitle = (EditText) findViewById(R.id.search_text);
         MovieAsyncTask movieTask = new MovieAsyncTask(this);
         String title = movieTitle.getText().toString();
-        movieTask.execute(getString(R.string.movieAPI_1) + title + getString(R.string.movieAPI_2));
+        title = handleInput(title);
+        if(title.length() > 0){
+            movieTask.execute(getString(R.string.movieAPI_1) + title + getString(R.string.movieAPI_2));
+        }
+    }
+
+    private String handleInput(String title){
+        if(title.length() > 0){
+            String[] splitTitle = title.split(" ");
+            if(splitTitle.length > 1){
+                String result = "";
+                int count = splitTitle.length;
+                while(count > 1){
+                    result = result + splitTitle[splitTitle.length-count] + "+";
+                    count = count - 1;
+                }
+                result = result + splitTitle[splitTitle.length-1];
+                return result;
+            }
+            return title;
+        }else{
+            Toast.makeText(getApplicationContext(), "Please enter a movie title!", Toast.LENGTH_SHORT);
+            return "";
+        }
     }
 
     public void setData(Film foundData){
         foundMovie = foundData;
         Intent movieIntent = new Intent(SearchActivity.this, MovieViewActivity.class);
         movieIntent.putExtra("theMovie", foundMovie);
+        movieIntent.putExtra("added", false);
         SearchActivity.this.startActivityForResult(movieIntent, 1);
     }
 
     public void checkWatchList(View view){
         Intent watchListIntent = new Intent(SearchActivity.this, WatchListActivity.class);
-        watchListIntent.putExtra("movies", watchList);
         SearchActivity.this.startActivity(watchListIntent);
     }
 

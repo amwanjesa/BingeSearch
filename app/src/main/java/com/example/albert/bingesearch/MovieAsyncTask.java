@@ -35,7 +35,7 @@ class MovieAsyncTask extends AsyncTask<String, Integer, String>{
         super.onPostExecute(result);
 
         if (result.length() == 0) {
-            Toast.makeText(context, "No data was found", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Movie not found.", Toast.LENGTH_SHORT).show();
         }
         else {
             try {

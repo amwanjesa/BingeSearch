@@ -2,8 +2,9 @@
     <string name="app_name">BingeSearch</string>
     <string name="serach_hint">Movie Tag</string>
     <string name="search_button_text">Search</string>
-    <string name="pre_exec_toast">Getting those sick flix!</string>
+    <string name="pre_exec_toast">Lookign for that movie.</string>
     <string name="movieAPI_1">http://www.omdbapi.com/?t=</string>
     <string name="movieAPI_2"><![CDATA[&y=&plot=short&r=json]]></string>
     <string name="watchlist_btn_text">View WatchList</string>
+    <string name="split_char">###</string>
 </resources>
